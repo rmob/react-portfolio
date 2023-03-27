@@ -15,6 +15,12 @@ body {
   margin: 0 auto;
 
 }
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5rem;
+  font-family: sans-serif;
+}
 
 a {
   color: black;
@@ -30,6 +36,20 @@ ul {
 
 }
 
+.unordered-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: ;
+  font-family: sans-serif;
+  justify-content: flex-start;
+}
+
 .nav-link {
   background-color: white;
 
@@ -37,4 +57,40 @@ ul {
 
 .active {
   background-color: yellow
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.formFormat input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-style: none;
+  margin-bottom: 1rem;
+  height: 2rem;
+  
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: gray
+}
+
+#text-area {
+  display: flex;
+  height: 100px;
+  width: 300px;
+  border: 1px dotted black;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  padding-top: 10rem;
+  font-family: sans-serif;
 }
