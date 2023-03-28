@@ -12,30 +12,52 @@ const styles = {
 
 }
 
-const linkArray = [
+// const linkArray = ['Github', 'LinkdIn', 'Twitter']
+
+const linksArray = [
   {
-    name: 'Github',
-    link: 'https://github.com/rmob'
+    site: 'Github',
+    url: 'https://github.com/rmob',
+    id: 1,
   },
   {
-    name: 'LinkdIn',
-    link: '',
+    site: 'LinkdIn',
+    url: '',
+    id: 2,
   },
   {
-    name: 'Twitter',
-    link: ''
-  }
-];
+    site: 'Twitter',
+    url: '',
+    id: 3,
+  },
+
+]
+
+// export function Links(props) {
+//   return <li style={styles.listItem}>{props.link}</li>
+// }
+
+// export default function Footer() {
+//   return (
+//     <div className="footer">
+//        <ul>
+//         {linkArray.map(link => <Links link={link} /> )}
+//        </ul>
+//     </div>
+//   );
+// }
 
 export function Links(props) {
-  return <li style={styles.listItem}>{props.link}</li>
+  return <li style={styles.listItem}>
+    <a style={styles.listItem} href={props.url}>{props.site}</a>
+    </li>
 }
 
 export default function Footer() {
   return (
     <div className="footer">
        <ul>
-        {linkArray.map(link => <Links link={link} /> )}
+        {linksArray.map(link => <Links site={link.site} url={link.url} key={link.id} /> )}
        </ul>
     </div>
   );

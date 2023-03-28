@@ -55,8 +55,6 @@ export function Project(props) {
 export default function Portfolio() {
   return (
     <>
-    
-      
       <div className="container">
       <h2>Portfolio</h2>
       <div className="about-info">
