@@ -2,8 +2,11 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
+    <>
+    
+      <h2>Portfolio</h2>
+      <div className="container">
+      <div className="about-info">
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
         Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
@@ -20,5 +23,7 @@ export default function Portfolio() {
         est ligula suscipit velit, sed bibendum turpis dui in sapien.
       </p>
     </div>
+    </div>
+    </>
   );
 }

@@ -2,18 +2,27 @@ import React from "react";
 
 const styles = {
   listItem: {
-    marginLeft: 5
+    marginLeft: 5,
+    fontSize: 25,
+    backgroundColor: "#ccc",
+    color: 'black',
+    fontWeight: 'bold'
   },
-  paddingTop: 200
+  
+
+}
+
+const linkArray = ['Github', 'LinkdIn', 'Twitter'];
+
+export function Links(props) {
+  return <li style={styles.listItem}>{props.link}</li>
 }
 
 export default function Footer() {
   return (
     <div className="footer">
        <ul>
-        <li style={styles.listItem}>Github</li>
-        <li style={styles.listItem}>LinkdIn</li>
-        <li style={styles.listItem}>Twitter</li>
+        {linkArray.map(link => <Links link={link} /> )}
        </ul>
     </div>
   );
