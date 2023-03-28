@@ -1,27 +1,66 @@
 import React from "react";
 
+
+const projects = [
+  {
+    title: 'first',
+    github: 'glink1',
+    deploy: 'dlink1',
+    id: 1,
+  },
+  {
+    title: 'second',
+    github: 'glink2',
+    deploy: 'dlink2',
+    id: 2,
+  },
+  {
+    title: 'third',
+    github: 'glink3',
+    deploy: 'dlink3',
+    id: 3,
+  },
+  {
+    title: 'fourth',
+    github: 'glink4',
+    deploy: 'dlink4',
+    id: 4,
+  },
+  {
+    title: 'fifth',
+    github: 'glink4',
+    deploy: 'dlink4',
+    id: 5,
+  },
+  {
+    title: 'sixth',
+    github: 'glink6',
+    deploy: 'dlink6',
+    id: 6,
+  },
+]
+
+export function Project(props) {
+  return <div>
+    <div className="container">
+      <div className="project-view">
+    <h3>{props.title}</h3>
+    <p className="github-link">{props.github}</p>
+    <p className="deploy-link">{props.deploy}</p>
+    </div>
+    </div>
+  </div>
+}
+
 export default function Portfolio() {
   return (
     <>
     
-      <h2>Portfolio</h2>
+      
       <div className="container">
+      <h2>Portfolio</h2>
       <div className="about-info">
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      {projects.map((project) => <Project title={project.title} github={project.github} deploy={project.deploy} key={project.id} /> )}
     </div>
     </div>
     </>

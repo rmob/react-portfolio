@@ -12,7 +12,20 @@ const styles = {
 
 }
 
-const linkArray = ['Github', 'LinkdIn', 'Twitter'];
+const linkArray = [
+  {
+    name: 'Github',
+    link: 'https://github.com/rmob'
+  },
+  {
+    name: 'LinkdIn',
+    link: '',
+  },
+  {
+    name: 'Twitter',
+    link: ''
+  }
+];
 
 export function Links(props) {
   return <li style={styles.listItem}>{props.link}</li>

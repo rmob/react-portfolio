@@ -16,8 +16,14 @@ body {
   justify-content: center;
   margin: 0 auto;
   background-color: black;
-  color: whitesmoke
+  color: whitesmoke;
+  background-image: url('/public/portfolio-avatar-3.png');
+  background-size: cover;
 
+}
+
+.back-black {
+  background-color: black;
 }
 
 h1 {
@@ -59,6 +65,7 @@ ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  max-width: 500px;
 
 }
 
@@ -105,7 +112,20 @@ ul {
   border-style: none;
   margin-bottom: 1rem;
   height: 2rem;
+  width: 100%
+}
+
+.sbmt-button {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: whitesmoke;
+  border-style: none;
+  height: 1.5rem;
   
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 label {
@@ -124,6 +144,15 @@ label {
 
 .footer {
   display: flex;
+  justify-content: flex-end;
   padding-top: 10rem;
   font-family: sans-serif;
+}
+
+.project-view {
+  border: 1px dotted black;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  min-width: 200px;
+
 }
