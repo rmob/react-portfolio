@@ -8,7 +8,7 @@ export default function About() {
     <div className='container'>
       
       <div>
-        <img src="portfolio-avatar-3.png" width='550px' alt="avatar"/>
+        <img id='avatar' src="portfolio-avatar-3.png" width='550px' alt="avatar"/>
       </div>
       <h2 className='back-black'>About me</h2>
       <p className='about-info back-black'>

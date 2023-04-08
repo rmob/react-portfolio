@@ -21,13 +21,13 @@ const linksArray = [
     id: 1,
   },
   {
-    site: 'LinkdIn',
-    url: '',
+    site: 'LinkedIn',
+    url: 'https://linkedin.com/in/riley-obryan',
     id: 2,
   },
   {
     site: 'Twitter',
-    url: '',
+    url: 'https://twitter.com/OBryanRiley',
     id: 3,
   },
 
@@ -56,7 +56,7 @@ export function Links(props) {
 export default function Footer() {
   return (
     <div className="footer">
-       <ul>
+       <ul id="footer-links">
         {linksArray.map(link => <Links site={link.site} url={link.url} key={link.id} /> )}
        </ul>
     </div>

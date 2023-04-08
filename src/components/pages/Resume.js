@@ -1,5 +1,18 @@
 import React from "react";
 
+const styles = {
+  download: {
+    color: 'red',
+    fontSize: 18
+  },
+  margin: {
+    marginTop: 50,
+    fontFamily: "sans-serif",
+    backgroundColor: 'black',
+    fontSize: 15
+  }
+}
+
 export function SkillsList(props) {
   return <li className="skills-list">{props.set}</li>;
 }
@@ -8,9 +21,10 @@ export default function Resume() {
   const skills = ['React', 'Node', 'Javascript', 'HTML', 'CSS'];
   
   return (
-    <div>
-      <h1>Download my resume here<img src='arrow.jpeg' width='75px' alt="download"/></h1>
-      <h2>Proficiencies, briefly</h2>
+    <div className="container">
+      <h1 style={styles.margin}>Download my resume<a style={styles.download} href="public/rmob_resume.rtf" download="resume-riley">here</a></h1>
+      
+      <h2>Web-dev Proficiencies</h2>
       <ul className="unordered-list">
       {skills.map((skill) => <SkillsList set={skill} />)}
       </ul>
