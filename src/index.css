@@ -74,14 +74,26 @@ ul {
 .unordered-list {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
+  font-size: 2rem;
+  max-width: 800px;
+  min-width: 300px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 0;
+  box-shadow: 3px 3px 5px black;
 }
 
 .skills-list {
   display: flex;
   font-family: sans-serif;
   justify-content: flex-start;
+  margin: 0 .5rem;
+  font-weight: bolder;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
 }
 
 .nav-link {
@@ -192,6 +204,7 @@ label {
   #avatar {
     width: 100px;
     margin-top: 2rem;
+    
   }
 
   body {
